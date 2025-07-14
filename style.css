@@ -1,3 +1,7 @@
+body {
+  padding: 10px;
+}
+
 .navbar {
   margin: 0px;
   height: 100px;
@@ -7,13 +11,14 @@
   display: flex;
   justify-content: space-between;
   position: sticky;
+  align-items: center;
   top: 0;
   z-index: 999;
 }
 
 .nav-logo {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 .nav-heading {
@@ -44,17 +49,29 @@
   color: red;
   text-decoration: underline;
 }
-
-.heading {
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading img{
+    height: 35px;
+  width: 35px;
+  margin-right: 8px;
+}
+.heading h1 {
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 45px;
-  font-weight: 900;
-  color: blue;
-  font-style: italic;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #0044ff;
+  font-weight: 800;
+  margin-top: 30px;
+  font-family: 'Fredoka One', sans-serif; /* Or any bold cartoon-style font */
+  text-shadow: 2px 2px 0 yellow;
+}
+.sub-tagline{
+  text-align: center;
+  font-size: 20px;
+  margin-top: -12px;
 }
 
 .pokemon-card {
@@ -80,7 +97,7 @@
   font-size: 2rem;
 }
 
-.pokemon-info .number a {
+.pokemon-info .number  {
   color: red;
   font-weight: bold;
   text-shadow: 2px 2px yellow;
@@ -91,17 +108,29 @@
   text-shadow: 1px 1px #000;
   font-weight: bold;
   margin-left: 10px;
-  text-decoration: none;
 }
-/* .pokemon-info .name a:hover {
-  text-decoration: underline;
-} */
-.name.p2 {
-  color: rgb(240, 105, 9);
+
+.name a{
+    text-decoration: none;
+}
+
+.name a:visited{
+  color: #ffcc00;
 }
 
 .pokemon-info p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 10px;
   line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .pokemon-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pokemon-card img {
+    margin-bottom: 10px;
+  }
 }
