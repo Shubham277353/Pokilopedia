@@ -15,7 +15,7 @@ A vibrant, single-page Pokémon website designed as a quick **CSS and HTML recap
 
 ## 🚀 Live Demo
 
-[🔗 View on GitHub Pages](#) <!-- Add your live link here -->
+[🔗 View on GitHub Pages](https://shubham277353.github.io/Pokilopedia/) <!-- Add your live link here -->
 
 ## 🧠 What I Practiced
 
